@@ -63,26 +63,26 @@ header {
   text-shadow: 1px 1px 3px rgb(154, 127, 88);
 }
 
-.nav-list {
+.daftar-nav {
   display: flex;
   gap: 3rem;
   list-style: none;
 }
 
-.nav-link {
+.navigasi {
   text-decoration: none;
   position: relative;
-  color: #a0634e;
+  color: #685b1a;
 
   text-transform: capitalize;
 }
 
-.nav-link:hover {
+.navigasi:hover {
   color: rgba(115, 118, 47, 0.445);
   transition: all;
 }
 
-.nav-toggle {
+.nav-tap {
   cursor: pointer;
   color: #f3efe3;
   display: none;
@@ -119,7 +119,7 @@ main {
   position: relative;
   width: 100%;
   padding-block: 5rem;
-  /* background-image: url("../assets/images/gakkocov.jpg"); */
+  background-image: url("../assets/images/covr.jpg");
 }
 
 .home-content {
@@ -386,6 +386,9 @@ main {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 }
+/*section 3*/
+
+/*section 4*/
 
 #shop {
   min-height: 100vh;
@@ -395,6 +398,7 @@ main {
   align-items: center;
   flex-direction: column;
   gap: 3rem;
+  background-image: url("../assets/images/covr.jpg");
 }
 
 .shop-container {
@@ -453,8 +457,9 @@ main {
   align-items: center;
   gap: 2rem;
 }
+/*section 4*/
 
-/* FOOTER */
+/* footer */
 footer {
   width: 100%;
   background-color: #413835;
@@ -475,6 +480,7 @@ footer {
 .footer-bar p {
   color: antiquewhite;
 }
+/* footer */
 
 @media screen and (max-width: 1440px) {
   .recomendation-content,
@@ -496,7 +502,7 @@ footer {
 @media screen and (max-width: 768px) {
   /* header */
 
-  .nav-list {
+  .daftar-nav {
     gap: 1rem;
     flex-direction: column;
     position: absolute;
@@ -512,16 +518,16 @@ footer {
     left: 0;
   }
 
-  .nav-link {
+  .navigasi {
     color: aliceblue;
   }
 
-  .nav-toggle {
+  .nav-tap {
     display: inline-block;
     z-index: 99;
   }
 
-  .nav-list.active {
+  .daftar-nav.active {
     top: 11vh;
   }
 
@@ -532,6 +538,4 @@ footer {
   .profil aside img {
     max-width: 20rem;
   }
-
-  .preview-manga;
 }

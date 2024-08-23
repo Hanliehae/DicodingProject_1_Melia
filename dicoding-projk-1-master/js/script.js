@@ -1,24 +1,25 @@
-const navList = document.querySelector(".nav-list");
-document.querySelector("#nav-toggle").addEventListener("click", () => {
-  navList.classList.toggle("active");
+const daftarnav = document.querySelector(".daftar-nav");
+document.querySelector("#nav-tap").addEventListener("click", () => {
+  daftarnav.classList.toggle("active");
 });
 
-// menyembunyikan kembali navbar setelah list di klik
-const navLink = document.querySelectorAll(".nav-link");
+//Setelah daftar diklik, navbar akan disembunyikan menggunakan fungsi ini.
+const navigasi = document.querySelectorAll(".navigasi");
 const linkAction = () => {
-  navList.classList.remove("active");
+  daftarnav.classList.remove("active");
 };
-navLink.forEach((n) => n.addEventListener("click", linkAction));
+navigasi.forEach((n) => n.addEventListener("click", linkAction));
 
-// menyembunyikan navbar saat klik di bagian luar navbar
-const navToggle = document.querySelector("#nav-toggle");
+//
+const navtap = document.querySelectorAll(".nav-tap");
+
 document.addEventListener("click", (e) => {
-  if (!e.target.matches("#nav-toggle, #nav-toggle *")) {
-    navList.classList.remove("active");
+  if (!e.target.matches("#nav-tap, #nav-tap *")) {
+    daftarnav.classList.remove("active");
   }
 });
 
-// smooth scrolling saat menekan link navbar
+// Untuk dapat memberikan smooth scrolling ketika menekan daftar navigasi.
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -28,6 +29,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
+//Fungsi untuk menampilkan cuplikan manga ketika diklik.
 const mangaPopup = document.querySelectorAll(".manga-img");
 
 mangaPopup.forEach((div) => {
