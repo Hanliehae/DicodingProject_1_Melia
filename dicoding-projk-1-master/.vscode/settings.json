@@ -1,0 +1,8 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "notebook.defaultFormatter": "vscode.html-language-features",
+  "css.format.enable": true,
+  "prettier.documentSelectors": [""],
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true
+}
