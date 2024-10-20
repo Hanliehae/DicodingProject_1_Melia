@@ -459,6 +459,14 @@ main {
 }
 /*section 4*/
 
+.me img {
+  width: 300px;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
 /* footer */
 footer {
   width: 100%;
